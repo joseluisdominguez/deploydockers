@@ -1,0 +1,20 @@
+# Imagenes disponibles en nuestro sistema
+$ docker images
+
+# Instancias inicias
+$ docker ps
+
+# Instancias iniciadas y no iniciadas
+$ docker ps -a
+
+# Eliminar las instancias de contenedores
+$ docker rm [contenedor]
+
+# Eliminar las imágenes, si están siendo usadas deberemos eliminar primero el contenedor
+$ docker rmi [imagen]
+
+# Compilar Dockerfile
+$ docker build -t my-python-app .
+
+# Arrancar docker
+$ docker run -it --rm --name my-running-app my-python-app
